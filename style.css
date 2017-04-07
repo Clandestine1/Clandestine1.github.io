@@ -1,0 +1,399 @@
+/* 
+===============================================
+  BASE CASE CSS: start writing for mobile!!!!!
+===============================================
+*/
+
+/* BODY */
+@font-face {
+  font-family: 'Roman';
+  src:  url('assets/Roman.ttf')
+}
+/* base setup */
+body {
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+i {
+  font-style: italic;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+p {
+width: 80%;
+line-height: 140%;
+}
+
+/* header, logo, nav */
+header {
+  background-color: #4E2011;
+}
+
+header .logo {
+  color: 	#FDFEF0;
+  padding: 2rem;
+  text-align: center;
+  font-size: 3em;
+  font-family: Roman;
+}
+
+.navlist li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navlist li {
+  text-align: center;
+  padding: 5px 0;
+}
+
+.navlist {
+  padding-bottom: 30px;
+}
+
+li:hover{
+  color: 	#B14820;
+}
+/* call to action */
+
+#cta {
+  background-color: #4E2011;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.cta-head {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+  padding: 0 20px;
+}
+
+.cta-a {
+  display: block;
+  width: 25%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: white;
+  color: #444;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+/* footer */
+
+footer {
+  background-color: black;
+}
+
+.footer-col {
+  color: white;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  height: 70px;
+  text-align: center;
+}
+
+
+/*
+====================
+===== HOME =========
+====================
+*/
+
+/* rows */
+
+.row {
+  width: 80vw;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 0;
+  box-sizing: border-box;
+}
+
+/*
+====================
+====== PLANETS PAGES 
+====================
+*/
+
+/* RULES THAT WILL APPLY TO ALL PLANET PAGES GO HERE */
+
+/* title area */
+.title-area .feat {
+  display: block;
+  padding: 50px;
+  text-align: center;
+  color: 	#FDFEF0;
+  font-size: 5em;
+  font-family: Roman;
+  text-shadow: 2px 2px lightslategray;
+  opacity: .7; 
+z-index: 5;
+margin-bottom: -14%;
+animation-name: move;
+    animation-duration: 40s;
+     -webkit-animation-duration: 40s;
+      -moz-animation-duration: 40s;
+       -o-animation-duration: 40s;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease-in-out;
+}
+
+ @keyframes move {
+        0% {
+        transform: translate3d(6px, 6px, 10px);
+        animation-timing-function: ease-in;
+        transform: rotate(-360deg);
+        left: 14%;
+    }
+    50% {
+        transform: translate3d(14px, 14px, 4px);
+        animation-timing-function: ease-out;
+        transform: rotate(360deg); 
+        left: 14%;
+    }
+    100% {
+        transform: translate3d(8px, 14px, 18px);
+        animation-timing-function: ease-in-out;
+        transform: rotate(-360deg);
+        left: 14%;
+    }
+}
+
+
+.feat-quote{
+  font-style: italic;
+  font-size: 44px;
+  position: absolute;
+  top: 20%;  
+  left: 4%;
+  font-family: cursive;
+  width: 88%;
+  text-align: center;
+}
+
+.feat{
+background-color: lightgrey;
+height: 340px;
+width: 80%;
+position: relative;
+z-index: -4;
+}
+
+.feat-attr{
+position: absolute;
+top: 78%;
+left: 50%;
+font-size: 24px;
+}
+
+    /* title facts */
+
+.title-area .top-facts {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+}
+
+.title-area .top-facts .facts-container .fact {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+
+.title-area .top-facts .facts-container .fact span {
+  display: block;
+}
+
+.title-area .top-facts .facts-container .fact .fact-number {
+  font-size: 2em;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.title-area .top-facts .facts-container .fact .fact-title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.sidebar{
+  width: 20%;
+  right: 3%;
+  top: 138%;
+  position: absolute;
+  z-index: -4;
+  border: 1px solid lightgrey;
+padding-top: 60px;
+padding-bottom: 60px;
+  padding-left: 30px;
+}
+.section-title{
+  font-weight: bolder;
+  font-size: 20px;
+}
+hr {
+  width: 90%;
+  position: relative;
+  left: -4%;
+}
+/*
+====================
+====== PLANET-SPECIFIC RULES 
+====================
+*/
+
+/* RULES THAT WILL ONLY APPLY TO SATURN GO HERE */
+
+.saturn .title-area {
+  background-image: url('https://aos.iacpublishinglabs.com/question/aq/700px-394px/saturn-s-mass_dacaff1f35365258.jpg?domain=cx.aos.ask.com');
+  background-size: cover;
+}
+
+
+
+
+/*
+#################################### 
+###### MEDIA QUERY -- DESKTOP ######
+#################################### 
+*/
+@media screen and (min-width: 1025px) {
+}
+@media screen 
+  and (min-device-width: 1025px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+  }
+
+  /* base setup */
+  body {
+    font-size: 18px;
+  }
+
+  /* header, logo, nav */
+  header {
+    position: fixed;
+    width: 100%;
+  }
+  
+  header .logo {
+    display: block;
+    float: left;
+  }
+
+  header nav {
+    display: block;
+    float: right;
+    padding-right: 20px;
+  }
+
+  .navlist li {
+    display: inline-block;
+  }
+
+  .navlist li a {
+    padding: 2em 10px;
+    display: block;
+  }
+
+  .navlist {
+    padding-bottom: 0px;
+  }
+
+    /* footer */
+
+  .footer-col {
+    width: 24%;
+    display: inline-block;
+    border-left: 1px solid #ccc;
+  }
+
+  .last-col {
+    border-right: 1px solid #ccc;
+  }
+
+  /*
+  ====================
+  ====== PLANETS PAGES 
+  ====================
+  */
+
+  .title-area .feat {
+    padding: 250px 0 150px;
+  }
+
+  .facts-container .fact {
+    display: inline-block;
+    width: 31%;
+  }
+
+
+}
+
+/* 
+#####################################
+####### MEDIA QUERY -- TABLET #######
+##################################### 
+*/
+@media screen and (max-width: 1024px) and (min-width: 801px) {}
+  /* RULES GO HERE */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+  }
+
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  }
+
+  @media 
+  (min-device-width: 800px) 
+  and (max-device-width: 1280px) {
+
+}
+
+@media screen 
+  and (device-width: 601px) 
+  and (device-height: 906px) 
+  and (-webkit-min-device-pixel-ratio: 1.331) 
+  and (-webkit-max-device-pixel-ratio: 1.332) {
+
+}
+
+@media only screen 
+  and (min-device-width: 800px) 
+  and (max-device-width: 1280px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
+}
+@media only screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
+}
+
+
+  /*
+  ====================
+  ===== HOME =========
+  ====================
+  */
+  .planet-col img {
+    width: auto;
+  }
+}
