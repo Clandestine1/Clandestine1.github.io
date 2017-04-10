@@ -266,12 +266,15 @@ hr {
 #################################### 
 */
 @media screen and (min-width: 1025px) {
+  body {width: 100%;
+        margin: 0;}
 }
 @media screen 
   and (min-device-width: 1025px) 
   and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 1) {
-
+    body {width: 100%;
+          margin: 0;}
   }
 
   /* base setup */
