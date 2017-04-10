@@ -6,8 +6,8 @@
 
 /* BODY */
 @font-face {
-  font-family: 'Roman';
-  src:  url('assets/Roman.ttf')
+  font-family: "Roman";
+  src:  url("Roman.ttf")
 }
 /* base setup */
 body {
@@ -27,7 +27,7 @@ i {
 
 p {
 width: 80%;
-line-height: 140%;
+line-height: 142%;
 }
 
 /* header, logo, nav */
